@@ -1,0 +1,17 @@
+Hoping this Works
+Writing Code that Nobody Else Can Read
+Blaming the User
+Copying and Pasting from Stack Overflow
+Excuses for Not Writing Unit Test
+Hating other People’s Code
+Trying Stuff Until it Works
+“Temporary” Workarounds
+Avoid Using Dark Patterns
+Excuses for Not Writing Documentation
+Taking on Needless Dependencies
+Copy Paste driven development
+Phishing
+Choosing Based on GitHub Stars
+Z-Index: 100000000000
+‘); DROP TABLE animals;--
+When Your HQ is 9 hours ahead
