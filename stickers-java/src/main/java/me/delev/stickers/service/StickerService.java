@@ -66,8 +66,8 @@ public class StickerService {
     private String createId(String name) {
         return Arrays.stream(name.split("\\s+"))
                 .map(String::toLowerCase)
-                .filter(it -> Pattern.matches("\\w+", it))
                 .filter(it -> it.length() > 0)
+                .filter(it -> Character.isAlphabetic(it.charAt(0)))
                 .map(it -> String.valueOf(it.charAt(0)))
                 .collect(Collectors.joining());
     }
