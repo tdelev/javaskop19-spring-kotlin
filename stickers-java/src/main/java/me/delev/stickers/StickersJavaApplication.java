@@ -34,7 +34,7 @@ class StickerInitializer implements ApplicationRunner {
     public void run(ApplicationArguments args) throws Exception {
         File file = new ClassPathResource("stickers.txt").getFile();
         String stickersText = new String(Files.readAllBytes(file.toPath()));
-        Arrays.stream(stickersText.split("\n"))
+        Arrays.stream(stickersText.split(System.lineSeparator()))
                 .forEach(service::create);
     }
 }
