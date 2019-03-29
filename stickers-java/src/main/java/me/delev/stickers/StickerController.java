@@ -1,14 +1,8 @@
-package me.delev.stickers.controller;
+package me.delev.stickers;
 
-import me.delev.stickers.domain.Sticker;
-import me.delev.stickers.domain.StickerVote;
-import me.delev.stickers.domain.VoteResult;
-import me.delev.stickers.service.StickerService;
-import me.delev.stickers.utils.IpUtils;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 
 @RestController
@@ -36,15 +30,5 @@ public class StickerController {
         return service.findById(id)
                 .map(ResponseEntity::ok)
                 .orElseGet(() -> ResponseEntity.notFound().build());
-    }
-
-    @PostMapping("/{id}/vote")
-    public StickerVote vote(@PathVariable String id, HttpServletRequest request) {
-        return service.vote(id, IpUtils.getClientIpAddress(request));
-    }
-
-    @GetMapping("/results")
-    public List<VoteResult> results() {
-        return service.results();
     }
 }

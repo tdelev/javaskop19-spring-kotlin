@@ -1,4 +1,4 @@
-package me.delev.stickers.domain;
+package me.delev.stickers;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;

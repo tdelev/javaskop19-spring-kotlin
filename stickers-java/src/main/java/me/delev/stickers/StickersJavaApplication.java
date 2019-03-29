@@ -1,6 +1,5 @@
 package me.delev.stickers;
 
-import me.delev.stickers.service.StickerService;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.boot.SpringApplication;
