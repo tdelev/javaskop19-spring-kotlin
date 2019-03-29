@@ -1,4 +1,4 @@
-package me.delev.stickerskotlin
+package me.delev.stickers
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication

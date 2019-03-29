@@ -1,4 +1,4 @@
-package me.delev.stickerskotlin
+package me.delev.stickers
 
 import org.junit.Test
 import org.junit.runner.RunWith
